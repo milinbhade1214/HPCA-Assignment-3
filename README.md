@@ -33,7 +33,7 @@ Alternatively, you can manually run the program for the different input sets usi
 ## PART B
 To compile the code for use on native GPU use the following command:
 ```
-make server
+make cmm_server
 ```
 For use with GPGPU-Sim, additional flags are required during compilation, which can be done with the following command:
 ```
@@ -41,8 +41,9 @@ make sim
 ```
 
 You can use make to run the executable with the following command for native execution:
-```
-make run_server
+``` 
+.\cmm_server.exe .\data\{generated_input_data_file}
+ex. {generated_input_data_file}  :  input_16384.in
 ```
 When running on GPGPU-Sim, use the following command instead:
 ```
